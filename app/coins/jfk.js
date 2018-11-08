@@ -1,7 +1,7 @@
 var Decimal = require("decimal.js");
 Decimal8 = Decimal.clone({ precision:8, rounding:8 });
 
-var btcCurrencyUnits = [
+var jfkCurrencyUnits = [
 	{
 		name:"JFK",
 		multiplier:1,
