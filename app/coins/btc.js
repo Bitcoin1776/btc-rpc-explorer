@@ -10,7 +10,7 @@ var btcCurrencyUnits = [
 		decimalPlaces:8
 	},
 	{
-		name:"mBTC",
+		name:"mJFK",
 		multiplier:1000,
 		values:["mbtc"],
 		decimalPlaces:5
@@ -41,10 +41,10 @@ module.exports = {
 		"https://raw.githubusercontent.com/btccom/Blockchain-Known-Pools/master/pools.json"
 	],
 	maxBlockWeight: 4000000,
-	currencyUnits:btcCurrencyUnits,
-	currencyUnitsByName:{"BTC":btcCurrencyUnits[0], "mBTC":btcCurrencyUnits[1], "bits":btcCurrencyUnits[2], "sat":btcCurrencyUnits[3]},
-	baseCurrencyUnit:btcCurrencyUnits[3],
-	feeSatoshiPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],
+	currencyUnits:jfkCurrencyUnits,
+	currencyUnitsByName:{"BTC":jfkCurrencyUnits[0], "mJFK":btcCurrencyUnits[1], "bits":jfkCurrencyUnits[2], "sat":jfkCurrencyUnits[3]},
+	baseCurrencyUnit:jfkCurrencyUnits[3],
+	feeJFKPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],
 	genesisBlockHash: "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
 	genesisCoinbaseTransactionId: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
 	genesisCoinbaseTransaction: {
