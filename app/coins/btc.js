@@ -3,10 +3,10 @@ Decimal8 = Decimal.clone({ precision:8, rounding:8 });
 
 var btcCurrencyUnits = [
 	{
-		name:"BTC",
+		name:"JFK",
 		multiplier:1,
 		default:true,
-		values:["", "btc", "BTC"],
+		values:["", "jfk", "JFK"],
 		decimalPlaces:8
 	},
 	{
@@ -30,14 +30,12 @@ var btcCurrencyUnits = [
 ];
 
 module.exports = {
-	name:"Bitcoin",
-	ticker:"BTC",
-	logoUrl:"/img/logo/btc.svg",
-	siteTitle:"Bitcoin Explorer",
-	siteDescriptionHtml:"<b>BTC Explorer</b> is <a href='https://github.com/janoside/btc-rpc-explorer). If you run your own [Bitcoin Full Node](https://bitcoin.org/en/full-node), **BTC Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/janoside/btc-rpc-explorer) for a list of features and instructions for running.",
-	nodeTitle:"Bitcoin Full Node",
-	nodeUrl:"https://bitcoin.org/en/full-node",
-	demoSiteUrl: "https://btc.chaintools.io",
+	name:"Bitcoin1776",
+	ticker:"JFK",
+	logoUrl:"https://www.bitcoin1776.org/fugiocent.jpg",
+	siteTitle:"Bitcoin1776 Explorer",
+	siteDescriptionHtml:"<b>JFK Explorer</b> is <a href='https://github.com/bitcoin1776/btc-rpc-explorer). If you run your own [Bitcoin1776 Full Node](https://bitcoin.org/en/full-node), **JFK Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/bitcoin1776/btc-rpc-explorer) for a list of features and instructions for running.",
+	nodeTitle:"Bitcoin1776 Full Node",
 	miningPoolsConfigUrls:[
 		"https://raw.githubusercontent.com/blockchain/Blockchain-Known-Pools/master/pools.json",
 		"https://raw.githubusercontent.com/btccom/Blockchain-Known-Pools/master/pools.json"
