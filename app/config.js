@@ -1,7 +1,7 @@
 var credentials = require("./credentials.js");
 var coins = require("./coins.js");
 
-var currentCoin = "BTC";
+var currentCoin = "JFK";
 
 module.exports = {
 	cookiePassword: "0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
@@ -106,11 +106,10 @@ module.exports = {
 	],
 
 	donationAddresses:{
-		coins:["BTC", "LTC"],
+		coins:["JFK"],
 		sites:{"BTC":"https://btc.chaintools.io", "LTC":"https://ltc.chaintools.io"},
 
-		"BTC":{address:"3NPGpNyLLmVKCEcuipBs7G4KpQJoJXjDGe"},
-		"LTC":{address:"ME4pXiXuWfEi1ANBDo9irUJVcZBhsTx14i"}
+		"JFK":{address:"3NPGpNyLLmVKCEcuipBs7G4KpQJoJXjDGe"},
 	},
 
 	headerDropdownLinks: {
