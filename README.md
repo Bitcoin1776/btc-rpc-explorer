@@ -1,15 +1,12 @@
 # BTC RPC Explorer
 
-Simple, database-free Bitcoin blockchain explorer, via RPC. Built with Node.js, express, bootstrap-v4.
+The Bitcoin1776 version of the Simple, database-free Bitcoin blockchain explorer, via RPC. Built with Node.js, express, bootstrap-v4.
 
 This tool is intended to be a simple, self-hosted explorer for the Bitcoin blockchain, driven by RPC calls to your own bitcoind node. This tool is easy to run but currently lacks features compared to database-backed explorers.
 
 I built this tool because I wanted to use it myself. Whatever reasons one might have for running a full node (trustlessness, technical curiosity, supporting the network, etc) it's helpful to appreciate the "fullness" of your node. With this explorer, you can not only explore the blockchain (in the traditional sense of the term "explorer"), but also explore the functional capabilities of your own node.
 
-Live demos are available at:
 
-* BTC: https://btc.chaintools.io
-* LTC: https://ltc.chaintools.io
 
 # Features
 
@@ -38,26 +35,12 @@ The below instructions are geared toward BTC, but can be adapted easily to other
 1. Clone this repo: `git clone https://github.com/janoside/btc-rpc-explorer`
 2. `npm install`
 3. `npm run build`
-4. Edit the "rpc" settings in [app/credentials.js](app/credentials.js) to target your node
-5. Optional: Change the "coin" value in [app/config.js](app/config.js). Currently supported values are "BTC" and "LTC".
-6. Optional: Add an ipstack.com API access key to [app/credentials.js](app/credentials.js). Doing so will add a map to the /peers page.
-7. `npm start` to start the local server
-8. Visit http://127.0.0.1:3002/
+4. Edit the "rpc" settings in [app/credentials.js](app/credentials.js) to target your node.
+5. Optional: Add an ipstack.com API access key to [app/credentials.js](app/credentials.js). Doing so will add a map to the /peers page.
+6. `npm start` to start the local server
+7. Visit http://127.0.0.1:3002/
 
 ## Run via Docker
 
 1. `docker build -t btc-rpc-explorer .`
-2. `docker run -p 3002:3002 -it btc-rpc-explorer`
-
-# Donate
-
-Any support for continued development of this tool is appreciated!
-
-* [Bitcoin](bitcoin:3NPGpNyLLmVKCEcuipBs7G4KpQJoJXjDGe): 3NPGpNyLLmVKCEcuipBs7G4KpQJoJXjDGe
-
-![Bitcoin Donation QR Code](/public/img/qr-btc.png)
-
-* [Litecoin](litecoin:ME4pXiXuWfEi1ANBDo9irUJVcZBhsTx14i): ME4pXiXuWfEi1ANBDo9irUJVcZBhsTx14i
-
-![Litecoin Donation QR Code](/public/img/qr-ltc.png)
-
+2. `docker run -p 3002:3002 -it btc-rpc-explorer .
