@@ -43,4 +43,4 @@ The below instructions are geared toward BTC, but can be adapted easily to other
 ## Run via Docker
 
 1. `docker build -t btc-rpc-explorer .`
-2. `docker run -p 3002:3002 -it btc-rpc-explorer .
+2. `docker run -p 3002:3002 -it btc-rpc-explorer 
