@@ -4,4 +4,5 @@ var ltc = require("./coins/ltc.js");
 module.exports = {
 	"BTC": btc,
 	"LTC": ltc
+	"JFK": jfk
 };
